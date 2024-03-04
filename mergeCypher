@@ -1,0 +1,5 @@
+MATCH (i:Incident)
+MATCH (o:Outcomes)
+WHERE i.crime_id = o.crime_id
+MERGE (i)-[:OUTCOME_HISTORY]->(o)
+RETURN *
