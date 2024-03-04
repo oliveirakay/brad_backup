@@ -2,7 +2,7 @@ import json
 
 equipes_existentes = set()
 
-with open("C:\\Users\\kayqu\\OneDrive\\Documents\\Bradesco\\nodes.json","r") as arquivo:
+with open("nodes-path.json","r") as arquivo:
     arq = json.load(arquivo)
 
 with open("cypher_creation.txt", "w") as cypher_file:
